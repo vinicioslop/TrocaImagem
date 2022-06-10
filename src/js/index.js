@@ -1,10 +1,8 @@
-let carregar = () => {
-    event.preventDefault();
+let carregar = (evt) => {
+    evt.preventDefault();
 
     let gato = document.getElementById("gato");
-
     let numero = Math.floor(Math.random() * 15 + 1);
-
     let caminho = "/src/imgs/cat" + numero + ".jpg";
 
     let imagem = document.createElement("img");
@@ -19,4 +17,4 @@ let carregar = () => {
     }
 };
 
-document.getElementsByTagName("button")[0].addEventListener('click', carregar);
+document.getElementById("botao").addEventListener('click', carregar);
