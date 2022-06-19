@@ -23,11 +23,6 @@ main form .items {
     flex-direction: column;
 }
 
-main form input {
-    margin-bottom: 10px;
-    width: auto;
-}
-
 main form button {
     width: auto;
     height: 20%;

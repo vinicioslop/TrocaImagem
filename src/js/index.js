@@ -11,10 +11,9 @@ let carregar = (evt) => {
 
     gato.replaceWith(imagem);
 
-    if (document.getElementById("resultados").classList.contains("esconde"))
-    {
+    if (document.getElementById("resultados").classList.contains("esconde")) {
         document.getElementById("resultados").classList.remove("esconde");
     }
 };
 
-document.getElementById("botao").addEventListener('click', carregar);
+document.getElementById("botao").addEventListener("click", carregar);
