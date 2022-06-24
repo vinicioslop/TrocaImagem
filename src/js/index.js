@@ -3,10 +3,9 @@ let carregar = (evt) => {
 
     let gato = document.getElementById("gato");
     let numero = Math.floor(Math.random() * 15 + 1);
-    let caminho = "src/imgs/cat" + numero + ".jpg";
 
     let imagem = document.createElement("img");
-    imagem.src = caminho;
+    imagem.src = "src/imgs/cat" + numero + ".jpg";
     imagem.id = "gato";
 
     gato.replaceWith(imagem);
